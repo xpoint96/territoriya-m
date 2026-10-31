@@ -1,0 +1,6 @@
+.DS_Store
+111/
+.tools/
+*.log
+.env
+.env.*

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kak — Vibe Coding</title>
+    <meta
+      name="description"
+      content="Сайт Kak: продукт, который чувствуется, и код, который собирается на вайбе."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Syne:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+    <div class="orb orb-a" aria-hidden="true"></div>
+    <div class="orb orb-b" aria-hidden="true"></div>
+
+    <header class="nav">
+      <a class="logo" href="#top">KAK</a>
+      <nav>
+        <a href="#work">Работы</a>
+        <a href="#method">Метод</a>
+        <a href="#contact">Контакт</a>
+      </nav>
+      <a class="nav-cta" href="#contact">Написать</a>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <p class="kicker">Product manager · vibe coding</p>
+        <h1>
+          Сайты,<br />
+          которые<br />
+          <em>дышат</em>
+        </h1>
+        <p class="lede">
+          Я Kak. Собираю продукты так, будто у них уже есть характер:
+          быстро, вкусно и без лишней бюрократии.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#contact">Давай сделаем</a>
+          <a class="btn ghost" href="#work">Посмотреть вайб</a>
+        </div>
+        <p class="status">
+          <span class="dot"></span>
+          Сейчас открыт к коротким запускам
+        </p>
+      </section>
+
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>продукт</span><span>вайб</span><span>скорость</span
+          ><span>характер</span><span>ясность</span><span>запуск</span
+          ><span>продукт</span><span>вайб</span><span>скорость</span
+          ><span>характер</span><span>ясность</span><span>запуск</span>
+        </div>
+      </div>
+
+      <section class="about">
+        <div class="about-copy">
+          <h2>Не презентация. Место, где идея становится экраном.</h2>
+          <p>
+            Я не жду идеального ТЗ. Берём ощущение, режем лишнее и
+            собираем страницу, на которую хочется кликнуть ещё раз.
+          </p>
+        </div>
+        <ul class="stats">
+          <li>
+            <strong>1 экран</strong>
+            <span>чтобы стало понятно, кто вы</span>
+          </li>
+          <li>
+            <strong>3 дня</strong>
+            <span>на живой прототип, если задача ясная</span>
+          </li>
+          <li>
+            <strong>0 воды</strong>
+            <span>в тексте, в кнопках и в процессе</span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="work" id="work">
+        <div class="section-head">
+          <h2>Что я собираю</h2>
+          <p>Три формата. Один вкус: смело, чисто, по делу.</p>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <span class="card-index">01</span>
+            <h3>Лендинг продукта</h3>
+            <p>
+              Герой, оффер, доказательства и кнопка, которая не теряется.
+              Для запуска, питча или первой волны трафика.
+            </p>
+          </article>
+          <article class="card">
+            <span class="card-index">02</span>
+            <h3>Личная страница</h3>
+            <p>
+              Портфолио без шаблонной сетки. Имя, характер, контакт —
+              и ничего, что стыдно показывать через месяц.
+            </p>
+          </article>
+          <article class="card">
+            <span class="card-index">03</span>
+            <h3>Микро-продукт</h3>
+            <p>
+              Небольшой сервис или инструмент: форма, калькулятор,
+              гайд. Чтобы идея жила, а не лежала в Notion.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="method" id="method">
+        <div class="section-head">
+          <h2>Как это происходит</h2>
+          <p>Короткий цикл. Без созвонов ради созвонов.</p>
+        </div>
+        <ol class="steps">
+          <li>
+            <h3>Сигнал</h3>
+            <p>Пишешь, зачем сайт и кому он должен попасть в голову.</p>
+          </li>
+          <li>
+            <h3>Контур</h3>
+            <p>Я собираю структуру, тон и первый экран в тот же день.</p>
+          </li>
+          <li>
+            <h3>Сборка</h3>
+            <p>Живая страница: типографика, движение, кнопки, мобилка.</p>
+          </li>
+          <li>
+            <h3>Запуск</h3>
+            <p>Правим по ощущению и отдаём то, что можно сразу открывать.</p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="contact" id="contact">
+        <h2>Есть идея —<br />не держи её в заметках.</h2>
+        <form class="form" id="contact-form">
+          <label>
+            Имя
+            <input type="text" name="name" placeholder="Как к тебе обращаться" required />
+          </label>
+          <label>
+            Почта
+            <input type="email" name="email" placeholder="hello@you.com" required />
+          </label>
+          <label class="full">
+            Что делаем
+            <textarea
+              name="idea"
+              rows="4"
+              placeholder="Пара строк: продукт, срок, настроение"
+              required
+            ></textarea>
+          </label>
+          <button class="btn primary" type="submit">Отправить вайб</button>
+          <p class="form-note" id="form-note" hidden></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 Kak · Vibe Coding</p>
+      <a href="#top">Наверх</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
