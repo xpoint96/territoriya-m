@@ -3,176 +3,340 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kak — Vibe Coding</title>
+    <title>Территория М — барбершоп в Краснодаре</title>
     <meta
       name="description"
-      content="Сайт Kak: продукт, который чувствуется, и код, который собирается на вайбе."
+      content="Барбершоп Территория М на Российской, 552/1. Стрижки, борода, укладки и уход. Рейтинг 5.0 на Яндекс Картах. Запись: +7 (918) 455-02-22."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Syne:wght@400;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Manrope:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="grain" aria-hidden="true"></div>
-    <div class="orb orb-a" aria-hidden="true"></div>
-    <div class="orb orb-b" aria-hidden="true"></div>
-
-    <header class="nav">
-      <a class="logo" href="#top">KAK</a>
-      <nav>
-        <a href="#work">Работы</a>
-        <a href="#method">Метод</a>
-        <a href="#contact">Контакт</a>
-      </nav>
-      <a class="nav-cta" href="#contact">Написать</a>
+    <header class="topbar">
+      <button class="icon-btn" id="menu-toggle" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="sr-only">Меню</span>
+        <span></span><span></span><span></span>
+      </button>
+      <a class="icon-link" href="#book" aria-label="Запись">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6">
+          <circle cx="12" cy="8" r="3.2" />
+          <path d="M5 19.2c1.4-3 4-4.6 7-4.6s5.6 1.6 7 4.6" />
+        </svg>
+      </a>
+      <a class="logo" href="#top">
+        <span class="logo-mark">
+          <small>БАРБЕРШОП</small>
+          <strong>ТМ</strong>
+          <small>КРАСНОДАР</small>
+        </span>
+      </a>
+      <button class="icon-btn" id="search-toggle" aria-label="Поиск">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6">
+          <circle cx="11" cy="11" r="6.5" />
+          <path d="M16.5 16.5 21 21" />
+        </svg>
+      </button>
+      <a class="icon-link" href="tel:+79184550222" aria-label="Позвонить">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6">
+          <path d="M7 3.8h3.2l1.1 3.2-1.8 1.4a12 12 0 0 0 5.1 5.1l1.4-1.8 3.2 1.1V17a2 2 0 0 1-2.2 2A15.2 15.2 0 0 1 5 6.2 2 2 0 0 1 7 3.8Z" />
+        </svg>
+      </a>
     </header>
+
+    <div class="search-panel" id="search-panel" hidden>
+      <form id="search-form">
+        <input type="search" name="q" placeholder="Стрижка, борода, адрес..." />
+        <button type="submit">Найти</button>
+      </form>
+      <p id="search-note" hidden></p>
+    </div>
+
+    <nav class="mobile-menu" id="mobile-menu" hidden>
+      <a href="#services">Услуги</a>
+      <a href="#shop">Косметика</a>
+      <a href="#about">О нас</a>
+      <a href="#barbers">Мастер</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#contacts">Как добраться</a>
+      <a class="menu-cta" href="#book">Записаться</a>
+    </nav>
 
     <main id="top">
       <section class="hero">
-        <p class="kicker">Product manager · vibe coding</p>
-        <h1>
-          Сайты,<br />
-          которые<br />
-          <em>дышат</em>
-        </h1>
-        <p class="lede">
-          Я Kak. Собираю продукты так, будто у них уже есть характер:
-          быстро, вкусно и без лишней бюрократии.
-        </p>
-        <div class="hero-actions">
-          <a class="btn primary" href="#contact">Давай сделаем</a>
-          <a class="btn ghost" href="#work">Посмотреть вайб</a>
-        </div>
-        <p class="status">
-          <span class="dot"></span>
-          Сейчас открыт к коротким запускам
-        </p>
-      </section>
-
-      <div class="marquee" aria-hidden="true">
-        <div class="marquee-track">
-          <span>продукт</span><span>вайб</span><span>скорость</span
-          ><span>характер</span><span>ясность</span><span>запуск</span
-          ><span>продукт</span><span>вайб</span><span>скорость</span
-          ><span>характер</span><span>ясность</span><span>запуск</span>
-        </div>
-      </div>
-
-      <section class="about">
-        <div class="about-copy">
-          <h2>Не презентация. Место, где идея становится экраном.</h2>
-          <p>
-            Я не жду идеального ТЗ. Берём ощущение, режем лишнее и
-            собираем страницу, на которую хочется кликнуть ещё раз.
+        <img src="images/hero.webp" alt="Барбершоп Территория М на Российской, 552/1" />
+        <div class="hero-copy">
+          <p class="kicker">с 2023 · краснодар · российская 552/1</p>
+          <h1>возвращаем<br /><em>характер</em></h1>
+          <p class="lede">
+            Настоящая мужская территория: стрижка под форму головы,
+            борода, укладка и уход. Чай, кофе и парковка — без доплаты.
           </p>
-        </div>
-        <ul class="stats">
-          <li>
-            <strong>1 экран</strong>
-            <span>чтобы стало понятно, кто вы</span>
-          </li>
-          <li>
-            <strong>3 дня</strong>
-            <span>на живой прототип, если задача ясная</span>
-          </li>
-          <li>
-            <strong>0 воды</strong>
-            <span>в тексте, в кнопках и в процессе</span>
-          </li>
-        </ul>
-      </section>
-
-      <section class="work" id="work">
-        <div class="section-head">
-          <h2>Что я собираю</h2>
-          <p>Три формата. Один вкус: смело, чисто, по делу.</p>
-        </div>
-        <div class="cards">
-          <article class="card">
-            <span class="card-index">01</span>
-            <h3>Лендинг продукта</h3>
-            <p>
-              Герой, оффер, доказательства и кнопка, которая не теряется.
-              Для запуска, питча или первой волны трафика.
-            </p>
-          </article>
-          <article class="card">
-            <span class="card-index">02</span>
-            <h3>Личная страница</h3>
-            <p>
-              Портфолио без шаблонной сетки. Имя, характер, контакт —
-              и ничего, что стыдно показывать через месяц.
-            </p>
-          </article>
-          <article class="card">
-            <span class="card-index">03</span>
-            <h3>Микро-продукт</h3>
-            <p>
-              Небольшой сервис или инструмент: форма, калькулятор,
-              гайд. Чтобы идея жила, а не лежала в Notion.
-            </p>
-          </article>
+          <div class="hero-actions">
+            <a class="btn dark" href="#shop">Все услуги и уход</a>
+            <a class="btn light" href="#contacts">Как добраться</a>
+          </div>
         </div>
       </section>
 
-      <section class="method" id="method">
+      <section class="promo-row">
+        <a href="#shop">Смотреть косметику</a>
+        <a href="#contacts">Найти барбершоп</a>
+      </section>
+
+      <section class="cats" id="services">
+        <a href="#book">
+          <img src="images/chairs.webp" alt="" />
+          <span>Волосы</span>
+        </a>
+        <a href="#book">
+          <img src="images/lounge.webp" alt="" />
+          <span>Лицо</span>
+        </a>
+        <a href="#book">
+          <img src="images/chairs.webp" alt="" />
+          <span>Бритьё</span>
+        </a>
+        <a href="#book">
+          <img src="images/products.webp" alt="" />
+          <span>Борода</span>
+        </a>
+        <a href="#book">
+          <img src="images/reception.webp" alt="" />
+          <span>Укладка</span>
+        </a>
+        <a href="#shop">
+          <img src="images/products.webp" alt="" />
+          <span>Уход</span>
+        </a>
+      </section>
+
+      <section class="split about" id="about">
+        <div class="split-copy">
+          <p class="eyebrow">аутентично, по-мужски</p>
+          <h2>не салон.<br />территория.</h2>
+          <p>
+            Учитываем пожелания до мелочей: форму головы, плотность
+            волоса, как вы живёте в течение недели. Мастер подберёт
+            стрижку и расскажет, как держать форму дома.
+          </p>
+          <p>
+            Работаем на профессиональных инструментах и косметике
+            Morgan’s и Rebel. Есть маникюр, детские стрижки, тонирование
+            и подарочные сертификаты.
+          </p>
+          <ul class="facts">
+            <li><strong>5.0</strong> рейтинг на Яндекс Картах</li>
+            <li><strong>96</strong> оценок · «Хорошее место 2026»</li>
+            <li><strong>от 900 ₽</strong> мужская стрижка</li>
+          </ul>
+        </div>
+        <figure>
+          <img src="images/chairs.webp" alt="Кресла барбершопа Территория М" />
+        </figure>
+      </section>
+
+      <section class="shop" id="shop">
         <div class="section-head">
-          <h2>Как это происходит</h2>
-          <p>Короткий цикл. Без созвонов ради созвонов.</p>
+          <h2>уход, который держит форму</h2>
+          <p>Проверено барберами. Для дома — те же средства, что на кресле.</p>
+        </div>
+        <div class="carousel-wrap">
+          <button class="slide-btn" id="prev" aria-label="Назад">‹</button>
+          <div class="carousel" id="carousel">
+            <article class="product">
+              <img src="images/products.webp" alt="Косметика Morgan's и Rebel" />
+              <h3>Morgan’s Matt Paste</h3>
+              <p>Матовая паста 75 мл · фиксация без блеска</p>
+              <p class="price">1 700 ₽</p>
+            </article>
+            <article class="product">
+              <img src="images/products.webp" alt="Текстурирующая глина Morgan's" />
+              <h3>Morgan’s Texture Clay</h3>
+              <p>Глина 75 мл · хит для плотности и текстуры</p>
+              <p class="price">1 700 ₽</p>
+            </article>
+            <article class="product">
+              <img src="images/products.webp" alt="Тоник и помады на полке" />
+              <h3>Styling Pomade Extra Firm</h3>
+              <p>50 г · сверхсильная фиксация</p>
+              <p class="price">1 500 ₽</p>
+            </article>
+            <article class="product">
+              <img src="images/products.webp" alt="Масла и тоники для бороды" />
+              <h3>Luxury Beard Oil</h3>
+              <p>Премиальное масло для бороды 30/50 мл</p>
+              <p class="price">от 2 200 ₽</p>
+            </article>
+            <article class="product">
+              <img src="images/products.webp" alt="Средства для ухода Morgan's" />
+              <h3>Oudh Shampoo</h3>
+              <p>Мужской шампунь на каждый день 250 мл</p>
+              <p class="price">2 000 ₽</p>
+            </article>
+          </div>
+          <button class="slide-btn" id="next" aria-label="Вперёд">›</button>
+        </div>
+      </section>
+
+      <section class="routine">
+        <div class="section-head">
+          <h2>как проходит визит</h2>
+          <p>Коротко, спокойно, по делу. Без суеты ради суеты.</p>
         </div>
         <ol class="steps">
           <li>
-            <h3>Сигнал</h3>
-            <p>Пишешь, зачем сайт и кому он должен попасть в голову.</p>
+            <span>01</span>
+            <h3>Разговор</h3>
+            <p>Говорите, как носите волосы и что бесит в прошлой стрижке.</p>
           </li>
           <li>
+            <span>02</span>
             <h3>Контур</h3>
-            <p>Я собираю структуру, тон и первый экран в тот же день.</p>
+            <p>Мастер смотрит форму головы и предлагает образ, который будет жить.</p>
           </li>
           <li>
-            <h3>Сборка</h3>
-            <p>Живая страница: типографика, движение, кнопки, мобилка.</p>
+            <span>03</span>
+            <h3>Стрижка</h3>
+            <p>Чисто, аккуратно, с укладкой. Чай и кофе — пока вы в кресле.</p>
           </li>
           <li>
-            <h3>Запуск</h3>
-            <p>Правим по ощущению и отдаём то, что можно сразу открывать.</p>
+            <span>04</span>
+            <h3>Домашний уход</h3>
+            <p>Подскажем пасту, глину или масло, чтобы форма держалась до следующего визита.</p>
           </li>
         </ol>
       </section>
 
-      <section class="contact" id="contact">
-        <h2>Есть идея —<br />не держи её в заметках.</h2>
-        <form class="form" id="contact-form">
+      <section class="barbers" id="barbers">
+        <div class="section-head">
+          <h2>мастер</h2>
+          <p>Лучшие руки для вашего стиля.</p>
+        </div>
+        <div class="barber-grid">
+          <article>
+            <img src="images/lounge.webp" alt="Зона ожидания барбершопа" />
+            <h3>Семён</h3>
+            <p class="role">Старший барбер · 7+ лет</p>
+            <p>
+              Учитывает пожелания и находит подход к каждому.
+              Постоянно учится на мастер-классах и семинарах.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="reviews" id="reviews">
+        <div class="section-head">
+          <h2>что пишут гости</h2>
+          <p>Яндекс Карты · персонал 95% · барберы 93% · стрижка 91%</p>
+        </div>
+        <div class="review-grid">
+          <blockquote>
+            <p>
+              Сервис на высоте, атмосфера ненавязчивая, мастера топ.
+              Учли пожелания и сделали стрижку до мелочей.
+            </p>
+            <cite>Аркадий Лобов</cite>
+          </blockquote>
+          <blockquote>
+            <p>
+              Хожу не первый раз — всегда отличный результат.
+              Слушают, советуют, стригут аккуратно. Форма держится долго.
+            </p>
+            <cite>Kak Dela</cite>
+          </blockquote>
+          <blockquote>
+            <p>
+              Кофе, удобный диван, спокойная обстановка.
+              Если что-то не так — спокойно предлагают поправить.
+            </p>
+            <cite>Гости зала</cite>
+          </blockquote>
+        </div>
+      </section>
+
+      <section class="visit" id="contacts">
+        <div class="visit-card">
+          <p class="eyebrow">барбершоп</p>
+          <h2>Территория М</h2>
+          <p>
+            Краснодар, мкр. Калинино<br />
+            ул. Российская, 552/1, 1 этаж
+          </p>
+          <p>
+            <a href="tel:+79184550222">+7 (918) 455-02-22</a><br />
+            <a href="mailto:20territoriyam23@gmail.com">20territoriyam23@gmail.com</a>
+          </p>
+          <p>
+            Пн–Вс: 10:00–21:00<br />
+            Без выходных
+          </p>
+          <p class="muted">
+            Остановка «Улица Ивана Рослого» — 59 м.
+            Бесплатная парковка у входа. Wi-Fi, оплата картой, СБП и наличными.
+            С животными нельзя.
+          </p>
+          <a class="btn dark" href="https://yandex.ru/maps/org/territoriya_m/152775210692/" target="_blank" rel="noreferrer">Открыть в Яндекс Картах</a>
+        </div>
+        <div class="map">
+          <iframe
+            title="Территория М на карте"
+            src="https://yandex.ru/map-widget/v1/?ll=39.013716%2C45.100148&z=16&oid=152775210692"
+            loading="lazy"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <section class="book" id="book">
+        <h2>запишитесь<br />на кресло</h2>
+        <form id="book-form">
           <label>
             Имя
-            <input type="text" name="name" placeholder="Как к тебе обращаться" required />
+            <input type="text" name="name" placeholder="Как к вам обращаться" required />
           </label>
           <label>
-            Почта
-            <input type="email" name="email" placeholder="hello@you.com" required />
+            Телефон
+            <input type="tel" name="phone" placeholder="+7" required />
           </label>
-          <label class="full">
-            Что делаем
-            <textarea
-              name="idea"
-              rows="4"
-              placeholder="Пара строк: продукт, срок, настроение"
-              required
-            ></textarea>
+          <label>
+            Услуга
+            <select name="service" required>
+              <option value="hair">Мужская стрижка</option>
+              <option value="beard">Борода / бритьё</option>
+              <option value="style">Укладка</option>
+              <option value="kids">Детская стрижка</option>
+              <option value="manicure">Маникюр</option>
+              <option value="tone">Тонирование</option>
+            </select>
           </label>
-          <button class="btn primary" type="submit">Отправить вайб</button>
+          <label>
+            Мастер
+            <select name="barber">
+              <option value="any">Любой свободный</option>
+              <option value="semen">Семён</option>
+            </select>
+          </label>
+          <button class="btn dark" type="submit">Записаться</button>
           <p class="form-note" id="form-note" hidden></p>
         </form>
       </section>
     </main>
 
     <footer class="footer">
-      <p>© 2026 Kak · Vibe Coding</p>
-      <a href="#top">Наверх</a>
+      <div>
+        <p>© 2026 Территория М</p>
+        <p>Краснодар, Российская 552/1</p>
+      </div>
+      <div>
+        <a href="tel:+79184550222">+7 (918) 455-02-22</a>
+        <a href="#top">Наверх</a>
+      </div>
     </footer>
 
     <script src="script.js"></script>
