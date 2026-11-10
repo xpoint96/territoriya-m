@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Спецтехника в СПб и Ленобласти — демонтаж, земляные работы, вывоз мусора</title>
+    <meta
+      name="description"
+      content="Экскаватор-погрузчик и эвакуатор с манипулятором в СПб и ЛО. Демонтаж, подготовка участка, земляные работы, вывоз мусора. Подача техники в день обращения."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__inner">
+        <a href="#" class="logo">
+          <span class="logo__mark">»</span>
+          <span class="logo__text">Спецтехника<small>СПб и Ленобласть</small></span>
+        </a>
+        <nav class="nav">
+          <a href="#services">Услуги</a>
+          <a href="#fleet">Техника</a>
+          <a href="#prices">Цены</a>
+          <a href="#works">Работы</a>
+          <a href="#calc">Расчёт</a>
+        </nav>
+        <div class="header__contacts">
+          <a class="header__phone" href="tel:+79113321111">+7 911 332-11-11</a>
+          <span class="header__hours">ежедневно 7:00–22:00</span>
+        </div>
+        <a class="btn btn--wa header__wa" href="https://wa.me/79113321111" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero__inner">
+          <div class="hero__content">
+            <div class="hero__badge">
+              <span class="pulse"></span> Подача техники в день обращения
+            </div>
+            <h1 class="hero__title">Спецтехника <span>для ваших задач</span></h1>
+            <p class="hero__lead">
+              Экскаватор-погрузчик и эвакуатор с манипулятором в СПб и Ленобласти. Снесём старый дом, подготовим
+              участок, выкопаем котлован и вывезем мусор под ключ.
+            </p>
+            <ul class="hero__tags">
+              <li>Демонтаж</li>
+              <li>Земляные работы</li>
+              <li>Вывоз мусора</li>
+              <li>Благоустройство</li>
+              <li>Аренда с оператором</li>
+            </ul>
+            <div class="hero__actions">
+              <a class="btn btn--primary btn--lg" href="tel:+79113321111">Позвонить</a>
+              <a class="btn btn--ghost btn--lg" href="#calc">Рассчитать стоимость</a>
+            </div>
+            <p class="hero__note">Отвечаем за 5 минут · Цена фиксируется до выезда</p>
+          </div>
+          <div class="hero__media">
+            <div class="hero__img">
+              <img src="img/hero.jpg" alt="Эвакуатор с манипулятором" width="466" height="290" />
+            </div>
+            <div class="hero__stat">
+              <b>от 2 часов</b>
+              <span>подача по СПб</span>
+            </div>
+          </div>
+        </div>
+        <div class="stripes" aria-hidden="true"></div>
+      </section>
+
+      <section class="section" id="services">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">Решаем задачи <span>любой сложности</span></h2>
+            <p class="section__sub">Работаем с частными участками, дачами и коммерческими объектами</p>
+          </div>
+          <div class="services">
+            <article class="service">
+              <div class="service__img"><img src="img/demontazh.jpg" alt="Демонтаж" loading="lazy" /></div>
+              <div class="service__body">
+                <h3>Демонтаж</h3>
+                <p>Снос дачных домов, бань, сараев, заборов и фундаментов. Сразу вывозим отходы.</p>
+                <div class="service__foot"><span class="price">от 15 000 ₽</span><a href="#calc" data-service="Демонтаж">Рассчитать →</a></div>
+              </div>
+            </article>
+            <article class="service">
+              <div class="service__img"><img src="img/uchastok.jpg" alt="Подготовка участка" loading="lazy" /></div>
+              <div class="service__body">
+                <h3>Подготовка участка</h3>
+                <p>Расчистка, планировка, корчевание пней, отсыпка щебнем и песком.</p>
+                <div class="service__foot"><span class="price">от 3 000 ₽/ч</span><a href="#calc" data-service="Подготовка участка">Рассчитать →</a></div>
+              </div>
+            </article>
+            <article class="service">
+              <div class="service__img"><img src="img/zemlya.jpg" alt="Земляные работы" loading="lazy" /></div>
+              <div class="service__body">
+                <h3>Земляные работы</h3>
+                <p>Котлованы, траншеи под коммуникации, септики и дренаж. Копаем и зимой.</p>
+                <div class="service__foot"><span class="price">от 3 000 ₽/ч</span><a href="#calc" data-service="Земляные работы">Рассчитать →</a></div>
+              </div>
+            </article>
+            <article class="service">
+              <div class="service__img"><img src="img/tehnika.jpg" alt="Вывоз мусора" loading="lazy" /></div>
+              <div class="service__body">
+                <h3>Вывоз мусора</h3>
+                <p>Строительный мусор, грунт, старая мебель. Погрузка нашей техникой.</p>
+                <div class="service__foot"><span class="price">от 6 000 ₽</span><a href="#calc" data-service="Вывоз мусора">Рассчитать →</a></div>
+              </div>
+            </article>
+            <article class="service service--dark">
+              <div class="service__icon">
+                <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M4 34h28V22H4zM32 26h7l5 6v2H32z"/><circle cx="12" cy="36" r="4"/><circle cx="36" cy="36" r="4"/><path d="M10 22l10-12 6 4"/></svg>
+              </div>
+              <div class="service__body">
+                <h3>Эвакуатор-манипулятор</h3>
+                <p>Перевозка авто, спецтехники, бытовок, блоков и стройматериалов с погрузкой стрелой.</p>
+                <div class="service__foot"><span class="price">от 3 500 ₽</span><a href="#calc" data-service="Эвакуатор-манипулятор">Рассчитать →</a></div>
+              </div>
+            </article>
+            <article class="service service--dark">
+              <div class="service__icon">
+                <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="24" cy="16" r="7"/><path d="M10 42c1.5-8 7-12 14-12s12.5 4 14 12"/><path d="M17 12h14"/></svg>
+              </div>
+              <div class="service__body">
+                <h3>Аренда с оператором</h3>
+                <p>Почасовая и посменная аренда. Опытный оператор, топливо включено в стоимость.</p>
+                <div class="service__foot"><span class="price">от 3 000 ₽/ч</span><a href="#calc" data-service="Аренда с оператором">Рассчитать →</a></div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="fleet">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">Наша <span>техника</span></h2>
+            <p class="section__sub">Своя техника без посредников, поэтому цена честная и выезд быстрый</p>
+          </div>
+          <div class="fleet">
+            <article class="unit">
+              <img src="img/tehnika.jpg" alt="Экскаватор-погрузчик" loading="lazy" />
+              <div class="unit__body">
+                <h3>Экскаватор-погрузчик</h3>
+                <dl class="specs">
+                  <div><dt>Глубина копания</dt><dd>до 5,9 м</dd></div>
+                  <div><dt>Объём переднего ковша</dt><dd>1 м³</dd></div>
+                  <div><dt>Ковши задние</dt><dd>40 / 60 / 80 см</dd></div>
+                  <div><dt>Гидромолот</dt><dd>есть</dd></div>
+                </dl>
+                <div class="unit__price">3 000 ₽/ч · минимальный заказ 4 часа</div>
+              </div>
+            </article>
+            <article class="unit">
+              <img src="img/hero.jpg" alt="Эвакуатор с манипулятором" loading="lazy" />
+              <div class="unit__body">
+                <h3>Эвакуатор с манипулятором</h3>
+                <dl class="specs">
+                  <div><dt>Грузоподъёмность платформы</dt><dd>5 т</dd></div>
+                  <div><dt>Стрела</dt><dd>3 т</dd></div>
+                  <div><dt>Вылет стрелы</dt><dd>до 10 м</dd></div>
+                  <div><dt>Длина платформы</dt><dd>6 м</dd></div>
+                </dl>
+                <div class="unit__price">от 3 500 ₽ за рейс по СПб</div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="prices">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">Честные цены <span>и прозрачные условия</span></h2>
+            <p class="section__sub">Точную стоимость называем до выезда. Платите по факту выполненных работ</p>
+          </div>
+          <div class="table-wrap">
+            <table class="prices">
+              <thead>
+                <tr><th>Услуга</th><th>Ед.</th><th>Цена</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Экскаватор-погрузчик с оператором</td><td>час</td><td>3 000 ₽</td></tr>
+                <tr><td>Экскаватор-погрузчик, смена 8 часов</td><td>смена</td><td>22 000 ₽</td></tr>
+                <tr><td>Гидромолот</td><td>час</td><td>3 800 ₽</td></tr>
+                <tr><td>Эвакуатор-манипулятор по СПб</td><td>рейс</td><td>от 3 500 ₽</td></tr>
+                <tr><td>Выезд за КАД</td><td>км</td><td>60 ₽</td></tr>
+                <tr><td>Демонтаж дачного дома под ключ</td><td>объект</td><td>от 15 000 ₽</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--yellow">
+        <div class="container">
+          <h2 class="section__title section__title--dark">Как мы работаем</h2>
+          <ol class="steps">
+            <li><b>01</b><h3>Заявка</h3><p>Звоните или пишите в WhatsApp. Можно прислать фото участка</p></li>
+            <li><b>02</b><h3>Расчёт</h3><p>Называем цену и время подачи техники за 5–10 минут</p></li>
+            <li><b>03</b><h3>Работа</h3><p>Приезжаем в день обращения и делаем работу в срок</p></li>
+            <li><b>04</b><h3>Оплата</h3><p>Принимаете результат и платите удобным способом</p></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section" id="works">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">Спецтехника <span>в деле</span></h2>
+            <p class="section__sub">Наши объекты в Ленинградской области</p>
+          </div>
+          <div class="gallery">
+            <figure><img src="img/demontazh.jpg" alt="" loading="lazy" /><figcaption>Демонтаж дома, Всеволожский р-н</figcaption></figure>
+            <figure><img src="img/uchastok.jpg" alt="" loading="lazy" /><figcaption>Подготовка участка, Гатчина</figcaption></figure>
+            <figure><img src="img/zemlya.jpg" alt="" loading="lazy" /><figcaption>Котлован под фундамент, Тосно</figcaption></figure>
+            <figure><img src="img/tehnika.jpg" alt="" loading="lazy" /><figcaption>Траншея под водопровод, Кировск</figcaption></figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt">
+        <div class="container geo">
+          <div>
+            <h2 class="section__title">Где <span>работаем</span></h2>
+            <p class="section__sub">Санкт-Петербург и вся Ленинградская область. По СПб подаём технику от 2 часов</p>
+            <ul class="geo__list">
+              <li>Санкт-Петербург</li><li>Всеволожский р-н</li><li>Гатчинский р-н</li><li>Тосненский р-н</li>
+              <li>Ломоносовский р-н</li><li>Кировский р-н</li><li>Пушкинский р-н</li><li>Выборгский р-н</li>
+              <li>Приозерский р-н</li><li>Колпино</li>
+            </ul>
+          </div>
+          <div class="advantages">
+            <div class="adv"><b>Опытная команда</b><span>Операторы со стажем от 7 лет</span></div>
+            <div class="adv"><b>Соблюдаем сроки</b><span>Работаем по договору</span></div>
+            <div class="adv"><b>Без посредников</b><span>Своя техника, поэтому цена ниже</span></div>
+            <div class="adv"><b>Нал / безнал</b><span>Работаем с НДС и без</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="calc">
+        <div class="container calc">
+          <div class="calc__info">
+            <h2 class="section__title">Рассчитаем <span>стоимость</span></h2>
+            <p class="section__sub">Оставьте заявку, и мы перезвоним за 5 минут, подберём технику и назовём точную цену.</p>
+            <a class="calc__phone" href="tel:+79113321111">+7 911 332-11-11</a>
+            <a class="btn btn--wa" href="https://wa.me/79113321111" target="_blank" rel="noopener">Написать в WhatsApp</a>
+          </div>
+          <form class="form" id="lead-form" novalidate>
+            <label>
+              <span>Что нужно сделать</span>
+              <select name="service" id="service">
+                <option>Демонтаж</option>
+                <option>Подготовка участка</option>
+                <option>Земляные работы</option>
+                <option>Вывоз мусора</option>
+                <option>Эвакуатор-манипулятор</option>
+                <option>Аренда с оператором</option>
+              </select>
+            </label>
+            <label>
+              <span>Адрес или район</span>
+              <input name="address" type="text" placeholder="Например, Всеволожск" />
+            </label>
+            <label>
+              <span>Телефон *</span>
+              <input name="phone" type="tel" placeholder="+7 (___) ___-__-__" required />
+            </label>
+            <label class="file">
+              <input name="photo" type="file" accept="image/*" multiple />
+              <span class="file__btn">Прикрепить фото участка</span>
+              <span class="file__name">необязательно</span>
+            </label>
+            <button class="btn btn--primary btn--lg btn--block" type="submit">Получить расчёт</button>
+            <p class="form__policy">Нажимая кнопку, вы соглашаетесь с обработкой персональных данных</p>
+            <div class="form__success" hidden>
+              <b>Заявка отправлена!</b>
+              <span>Перезвоним в течение 5 минут.</span>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="section section--alt">
+        <div class="container faq">
+          <h2 class="section__title">Частые <span>вопросы</span></h2>
+          <details open>
+            <summary>Сколько стоит выезд?</summary>
+            <p>По Санкт-Петербургу выезд бесплатный при заказе от 4 часов. За КАД доплата 60 ₽/км в одну сторону.</p>
+          </details>
+          <details>
+            <summary>Работаете ли зимой?</summary>
+            <p>Да, круглый год. Мёрзлый грунт разбиваем гидромолотом.</p>
+          </details>
+          <details>
+            <summary>Можно ли заказать на сегодня?</summary>
+            <p>Да. Если техника свободна, подаём в день обращения, обычно в течение 2–4 часов.</p>
+          </details>
+          <details>
+            <summary>Работаете с юрлицами?</summary>
+            <p>Да, заключаем договор, работаем по безналу с НДС и без НДС, предоставляем закрывающие документы.</p>
+          </details>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="logo">
+          <span class="logo__mark">»</span>
+          <span class="logo__text">Спецтехника<small>СПб и Ленобласть</small></span>
+        </div>
+        <a class="header__phone" href="tel:+79113321111">+7 911 332-11-11</a>
+        <span class="footer__copy">© 2026 · Демо-версия сайта</span>
+      </div>
+    </footer>
+
+    <div class="mobile-bar">
+      <a class="btn btn--primary" href="tel:+79113321111">Позвонить</a>
+      <a class="btn btn--wa" href="https://wa.me/79113321111" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
